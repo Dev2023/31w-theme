@@ -1,7 +1,7 @@
 /*! 
 Theme Name: 31W-cours 
-Author: Eddy Martin
-Author URI: http://github.com/eddytuto
+Author: Yordan Toledano
+Author URI: http://github.com/Dev2023
 Description: Thème de base pour le cours de 31W
 Version: 1.0.0
 Tested up to: 5.4
@@ -65,6 +65,11 @@ Text Domain: 31-w
 # Base
 --------------------------------------------------------------*/
 @import "base/base";
+/* 
+# Navigation Sidebar
+ */
+@import "composante/nav_sidebar";
+
 
 /*--------------------------------------------------------------
 # Layout
