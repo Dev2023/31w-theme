@@ -41,3 +41,18 @@ add_action( 'after_setup_theme', 'mon_31w_setup' );
 
     }
     add_action( 'wp_enqueue_scripts', 'mon_31w_enqueue' );
+
+    /**
+ *
+ *  The Code below will modify the main WordPress loop, before the queries fired,
+ *  to only show posts in the halloween category on the home page.
+ *
+ */
+function mon_31w_pre_get_post_accueil( $query ) {
+    if (    $query->is_home() 
+            && $query->is_main_query() 
+            && ! is_admin() ) {
+        $query->set( 'category_name', 'Accueil' );
+    }
+}
+add_action( 'pre_get_posts', 'mon_31w_pre_get_post_accueil' );
