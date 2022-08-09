@@ -1,15 +1,21 @@
-<?php get_footer(); ?>
-
- <?php get_header(); ?> 
+<?php get_header(); ?> 
 <section class="site__main">
-    <h1>front-page.php Mon premier modèle Wordpress</h1>
+    <h1>Mon premier modèle Wordpress</h1>
     <?php
     if (have_posts()):
         while(have_posts()) : the_post(); ?>
-            <h2><a href="<?= get_permalink() ?>"><?php the_field('titre'); ?></a></h2>
-            <h3><?php the_field('sous_titre'); ?></h3>
-            <p><?php the_field('resume'); ?></p>
+            <div>
+                <?php $image = get_field('image');
+                if( !empty( $image ) ): ?>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <?php endif; ?>
+            </div>
+            <h2><a href="<?=get_permalink() ?>"><?php the_field('titre'); ?></a></h2>
+            <h3><?php the_field('sous_titre')?></h3>
+            <p><?php the_field('resume')?></p>
+            
         <?php endwhile; ?>
     <?php endif; ?>    
 </section>
 <?php get_footer(); ?>
+
