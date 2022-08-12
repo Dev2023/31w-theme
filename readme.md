@@ -1,13 +1,5 @@
-# TP1
-## Thème et plugin  Wordpress
-### Contient 12 commits
+# TP2
+## Thème 31w-cours et plugin  Wordpress
+## Exercice 4
+### Page 404, ajout d'articles ilustrés avec images et création de la categorie accueil.
 
-[github-page](https://Dev2023.github.io/theme-31w)
-> Le thème utilise une structure de grid pour formater le layout
-
-
-Pour plus d'information sur la conception de thème
-[WP developper guide](https://developper.wordpress.org/theme)
-
-Pour plus d'information sur la structure grid
-[css-tricks/grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
