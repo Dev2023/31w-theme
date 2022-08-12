@@ -21,14 +21,19 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__header {
 	grid-area: header;
-    background-color:  lighten($color__background-zonegrid, 20%);
+    background-color:  lighten($color__background-zonegrid, 25%);
    
 }
 
 .site__main {
 	grid-area: main;
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-    background-color:  lighten($color__background-zonegrid, 30%);
+    background-color:  lighten($color__background-zonegrid, 30%);//30 origin
+}
+.site__main img {
+	width: 100%;
+	max-height: 600px;
+	object-fit: cover;
 }
 
 .site__sidebar {

@@ -626,7 +626,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__header {
   grid-area: header;
-  background-color: #e78f81;
+  background-color: #eba297;
 }
 
 .site__main {
@@ -634,6 +634,12 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
   background-color: #efb5ac;
+}
+
+.site__main img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 
 .site__sidebar {
