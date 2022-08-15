@@ -15,7 +15,13 @@
             <p><?php the_field('resume')?></p>
             
         <?php endwhile; ?>
-    <?php endif; ?>    
+    <?php endif; ?> 
+    <?php wp_nav_menu(array(
+                'menu' => 'accueil',
+                'container' => 'nav',
+                
+)); ?>   
 </section>
+
 <?php get_footer(); ?>
 

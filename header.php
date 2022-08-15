@@ -32,10 +32,10 @@
         <section class="site__sidebar">
             <h3>Sidebar</h3>
             <?php wp_nav_menu(array(
-                'menu' => '',
+                'menu' => 'menu sidebar', //nom du menu 
                 'container' => 'nav',
                 'container_class' => 'menu__sidebar',
-                'menu_class' => 'menu__sidebar__ul',
+                'menu_class' => 'menu__sidebar__ul', //class
             )) ?>
         </section>
     
