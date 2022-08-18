@@ -588,7 +588,17 @@ textarea {
 /* 
 # Navigation Sidebar
  */
+.menu__sidebar {
+  background-color: #cede9b;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 99;
+}
+
 .menu__sidebar__ul {
+  background-color: #676a9a;
   list-style: none;
   margin: 0;
   padding: .4rem 0;
