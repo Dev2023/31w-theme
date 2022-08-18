@@ -597,6 +597,12 @@ textarea {
   z-index: 99;
 }
 
+@media screen and (min-width: 700px) {
+  .menu__sidebar {
+    position: static;
+  }
+}
+
 .menu__sidebar__ul {
   background-color: #676a9a;
   list-style: none;

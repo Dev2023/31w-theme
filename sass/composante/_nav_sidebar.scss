@@ -1,14 +1,44 @@
-.menu__sidebar {
-    background-color: rgb(206, 222, 155);
+#burger {
+    display: block;
     position: absolute;
+    top: 50px;
+    left: 50;
+    z-index: 100;
+    transform: rotate(0deg);
+    transition: transform .6s;
+    @media screen and (min-width : 700px) {
+        display: none;
+    }
+}
+
+.menu__sidebar {
+    background-color: rgb(103, 106, 154, 0.3);
+    position: absolute;
+    padding-top: 75px;
     left: 0;
     top: 0;
     width: 100vw;
     z-index: 99;
+    transform: translateX(-100vw);
+    transition: transform .5s;
+    @media screen and (min-width : 700px){
+        position: static;
+        width: 100%;
+        transform: translateX(0vw);
+    }
+}
+#chk-burger {
+    display: none;
+}
+#chk-burger:checked ~ .menu__sidebar {
+    transform: translateX(0vw);
+}
+#chk-burger:checked ~ #burger {
+    transform: rotate(90deg);
 }
 
 .menu__sidebar__ul {
-    background-color: rgb(103, 106, 154);
+    background-color: rgb(103, 106, 154, 0.3);
     list-style: none;
     margin: 0;
     padding: .4rem 0;

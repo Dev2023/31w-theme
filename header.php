@@ -30,7 +30,11 @@
             </nav>
         </header>
         <section class="site__sidebar">
-            <h3>Sidebar</h3>
+            <input type="checkbox" name="chk-burger" id="chk-burger">
+            <label for="chk-burger" id="burger">
+            <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32">
+            </label>
+            
             <?php wp_nav_menu(array(
                 'menu' => 'menu sidebar', //nom du menu 
                 'container' => 'nav',
