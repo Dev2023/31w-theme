@@ -49,14 +49,14 @@ add_action( 'after_setup_theme', 'mon_31w_setup' );
  *  to only show posts in the halloween category on the home page.
  *
  */
-function mon_31w_pre_get_posts_accueil( $query ) {
+function mon_31w_pregetposts_accueil( $query ) {
     if (    $query->is_home() 
             && $query->is_main_query() 
             && ! is_admin() ) {
         $query->set( 'category_name', 'accueil' );
     }
 }
-add_action( 'pre_get_posts', 'mon_31w_pre_get_posts_accueil' );
+add_action( 'pre_get_posts', 'mon_31w_pregetposts_accueil' );
 /**
  * Dernière session ajout copie de teams
  * s'execute si il'y a de description
