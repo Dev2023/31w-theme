@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    
 }
 .blocs__horizontaux article {
     display: flex;
@@ -11,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     height: 300px;
+    margin-block-end: 300px;
     border: 1px solid burlywood;
     width: 45%;
     @media screen and (min-width: 700px) {
@@ -20,4 +22,5 @@
 .blocs__horizontaux img {
     height: 200px;
     object-fit: cover;
+    border-radius: 5px;
 }
