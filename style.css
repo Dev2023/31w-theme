@@ -605,9 +605,9 @@ textarea {
 }
 
 .menu__sidebar {
-  background-color: #676a9a;
+  background-color: rgba(100, 104, 164, 0.5);
   position: absolute;
-  padding-top: 75px;
+  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100vw;
@@ -621,6 +621,9 @@ textarea {
     position: static;
     width: 100%;
     transform: translateX(0vw);
+    background-color: #000;
+    padding-top: 10px;
+    border-radius: 3px;
   }
 }
 
@@ -637,7 +640,6 @@ textarea {
 }
 
 .menu__sidebar__ul {
-  background-color: #676a9a;
   list-style: none;
   margin: 0;
   padding: .4rem 0;
@@ -650,10 +652,13 @@ textarea {
 .menu__sidebar__ul .menu-item a {
   padding: 0.5rem;
   line-height: 1.5rem;
+  color: #08dee9;
+  text-decoration: none;
 }
 
 .menu__sidebar__ul .menu-item a:hover {
-  background-color: #efb5ac;
+  background-color: white;
+  border-top-right-radius: 7px;
 }
 
 .blocs__horizontaux {
@@ -671,7 +676,7 @@ textarea {
   align-items: center;
   height: 300px;
   margin-block-end: 300px;
-  border: 1px solid burlywood;
+  border: 1px solid #000;
   width: 45%;
 }
 
@@ -685,6 +690,10 @@ textarea {
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.blocs__horizontaux article > h2 a {
+  font-size: 14pt;
 }
 
 /*Bloc menu de la page d'accueil*/
@@ -730,14 +739,14 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__header {
   grid-area: header;
-  background-color: #eba297;
+  background-color: #cb9b94;
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #efb5ac;
+  background-color: #d4aba5;
 }
 
 .site__main img {
@@ -748,12 +757,12 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: #f7dbd7;
+  background-color: #e4cbc8;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #e78f81;
+  background-color: #c38b83;
 }
 
 @media screen and (min-width: 700px) {
