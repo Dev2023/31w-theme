@@ -1,6 +1,6 @@
 <?php get_header(); ?> 
 <section class="site__main">
-    <h1>Yordan modèle Wordpress</h1>
+    <h1>Yordan WP</h1>
     <div class="blocs__horizontaux">
         <?php
         if (have_posts()):
@@ -19,13 +19,14 @@
             <?php endwhile; ?>
         <?php endif; ?> 
     </div> 
-    <?php wp_nav_menu(array(
-                'menu' => 'menu accueil',
-                'container' => 'nav',
-                
-)); ?>
-  
-</section>
+    <div>
+        <?php wp_nav_menu(array(
+                    'menu' => 'menu accueil',
+                    'container' => 'nav',
+                    
+                    )); ?>
+    </div>
+</section> 
 
 <?php get_footer(); ?>
 

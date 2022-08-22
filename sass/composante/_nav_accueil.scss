@@ -1,18 +1,24 @@
 /*Bloc menu de la page d'accueil*/
+/* .site__main {
+    text-align: center;
+} */
+.site__main h1 {
+    color: $color__text-screen;
+    text-align: center;
+}
 .menu-accueil-container {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .menu-accueil-container .menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   
-}
+}   
 .menu-accueil-container .menu-item {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 1px solid yellowgreen;
+    border: 1px solid $color__background-ins; //box-shadow: 3px;
     width: 30%;
     padding: 1.5rem;
 }

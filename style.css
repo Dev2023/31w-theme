@@ -621,7 +621,7 @@ textarea {
     position: static;
     width: 100%;
     transform: translateX(0vw);
-    background-color: #000;
+    background-color: #999999;
     padding-top: 10px;
     border-radius: 3px;
   }
@@ -657,7 +657,7 @@ textarea {
 }
 
 .menu__sidebar__ul .menu-item a:hover {
-  background-color: white;
+  background-color: #b26b61;
   border-top-right-radius: 7px;
 }
 
@@ -675,9 +675,10 @@ textarea {
   justify-content: space-between;
   align-items: center;
   height: 300px;
-  margin-block-end: 300px;
+  margin-block-end: 150px;
   border: 1px solid #000;
   width: 45%;
+  border-radius: 7px;
 }
 
 @media screen and (min-width: 700px) {
@@ -688,17 +689,36 @@ textarea {
 
 .blocs__horizontaux img {
   height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  object-fit: contain;
 }
 
 .blocs__horizontaux article > h2 a {
-  font-size: 14pt;
+  font-size: 20pt;
+  margin-top: -20px;
+}
+
+.blocs__horizontaux article > h3 {
+  font-size: 16pt;
+  color: #fff9c0;
+}
+
+.blocs__horizontaux article > p {
+  margin-block-start: -10px;
 }
 
 /*Bloc menu de la page d'accueil*/
+/* .site__main {
+    text-align: center;
+} */
+.site__main h1 {
+  color: #21759b;
+  text-align: center;
+}
+
 .menu-accueil-container {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .menu-accueil-container .menu {
@@ -711,7 +731,7 @@ textarea {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  border: 1px solid yellowgreen;
+  border: 1px solid #fff9c0;
   width: 30%;
   padding: 1.5rem;
 }

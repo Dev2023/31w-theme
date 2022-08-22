@@ -10,7 +10,6 @@
         display: none;
     }
 }
-
 .menu__sidebar {
     background-color: rgba(100, 104, 164, 0.5); //utilisé pour avoir l'opacité
     position: absolute;
@@ -25,7 +24,7 @@
         position: static;
         width: 100%;
         transform: translateX(0vw);
-        background-color: $color__h;
+        background-color: lighten($color__h, 60%);
         padding-top: $size__px-moyenne;
         border-radius: $size__px-petit;
     }
@@ -57,7 +56,7 @@
     text-decoration: none;
 }
 .menu__sidebar__ul .menu-item a:hover {
-    background-color: lighten($color__background-zonegrid, 60%);
+    background-color: lighten($color__background-zonegrid, 10%);
     border-top-right-radius: $size__px-radius;
 } 
 
