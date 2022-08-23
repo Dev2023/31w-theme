@@ -23,22 +23,24 @@
             $niveau_de_dificultee = get_field("niveau_de_dificultee");
             $heure = get_field("heure");
             $prix = get_field("prix");
-            echo "<p class='animateur'>Animateur : " . $animateur . "</p>";
-            echo "<p class='type_de_formation'>type_de_formation : " . $type_de_formation . "</p>";
-            echo "<p class='date_de_debut'>Date de début : " . $date_de_debut . "</p>";
-            echo "<p class='duree'>Durée : " . $duree . "</p>";
-            echo "<p class='heure'>L'heure : " . $heure . "</p>";
-            echo "<p class='produit__description'>Description : " . $description . "</p>";
-            echo "<p class='niveau_de_dificultee'>Niveau de dificultée : " . $niveau_de_dificultee . "</p>";
-            echo "<p class='lieu'>Lieu : " . $lieu . "</p>";
-            echo "<p class='produit__prix'>Prix : " . $prix . "</p>";
-            /* $image = get_field('image');
+            echo "<p class='atelier__animateur'>Animateur : " . $animateur . "</p>";
+            echo "<p class='atelier__type_de_formation'>Type de formation : " . $type_de_formation . "</p>";
+            echo "<p class='atelier__date_de_debut'>Date de début : " . $date_de_debut . "</p>";
+            echo "<p class='atelier__duree'>Durée : " . $duree . "</p>";
+            echo "<p class='atelier__heure'>L'heure : " . $heure . "</p>";
+            echo "<p class='atelier__nombre_dheures_par_seance'>Nombre d'heures par séance : " . $nombre_dheures_par_seance . "</p>";
+            echo "<p class='atelier__niveau_de_dificultee'>Niveau de dificultée : " . $niveau_de_dificultee . "</p>";
+            echo "<p class='atelier__lieu'>Lieu : " . $lieu . "</p>";
+            echo "<p class='atelier__prix'>Prix : " . $prix . "</p>";
+            $image = get_field('image');
                 if( !empty( $image ) ): ?>
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                <?php endif; ?>    */
-            
+                    <img src="<?php echo esc_url($image['url']); ?>" 
+                    alt="<?php echo esc_attr($image['alt']); ?>" />       
+                <?php endif; ?>    
+    
+          
         </article>
-    <?php endif; ?>
+    <?php endif; ?>  
     
 </main>
 <?php get_footer(); ?>

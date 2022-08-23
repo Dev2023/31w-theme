@@ -26,6 +26,14 @@
                     
                     )); ?>
     </div>
+
+    <div class="conteneur-du-menu__ateliers">
+        <?php wp_nav_menu(array(
+                    'menu' => 'menu_ateliers',
+                    'container' => 'nav',
+                    
+                    )); ?>
+    </div>
 </section> 
 
 <?php get_footer(); ?>
