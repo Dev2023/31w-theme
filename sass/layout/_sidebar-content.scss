@@ -3,8 +3,6 @@ Guide efficace sur l'utilisation de grid
 https://css-tricks.com/snippets/css/complete-guide-grid/
 */
 .site {
-
-
 	display: grid;
 	grid-template-columns:  auto;
 	grid-template-areas:
@@ -12,8 +10,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 		"sidebar sidebar"
 		"main main"
 		"footer footer";
-	
-}
+}	
 
 .site__header, .site__sidebar, .site__main, .site__footer {
      padding : 1vh 3vw;
@@ -38,7 +35,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__sidebar {
 	grid-area: sidebar;
-    background-color:  lighten($color__background-zonegrid, 40%);
+    background-color:  lighten($color__background-zonegrid,30%);
 }
 
 .site__footer {

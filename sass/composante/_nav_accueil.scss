@@ -8,20 +8,43 @@
 }
 .menu-accueil-container {
     margin-top: 10px;
+    @media screen and (max-width: $size__px-ecran-mobile) {
+        width: 100%;
+    }
 }
 .menu-accueil-container .menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}   
+    @media screen and (max-width: $size__px-ecran-mobile) {
+        justify-content: flex-start;
+    }
+}
+.conteneur-du-menu__accueil nav {
+    width: 100%;
+}
+   
 .menu-accueil-container .menu-item {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 1px solid $color__background-ins; //box-shadow: 3px;
+    border: 1px solid $color__text-input; //box-shadow: 3px;
     width: 30%;
     padding: 1.5rem;
+    @media screen and (max-width: $size__px-ecran-mob-tab) {
+        border: none;
+        width: 100vw;
+        padding: 0;
+    }
 }
 .menu-accueil-container .menu-item a {
     text-decoration: none;
+}
+@media screen and (max-width: $size__px-ecran-mobile) {
+    .menu-item-description {
+        display: none;
+    }
+    #menu-accueil {
+        width: 100vw;
+    }
 }

@@ -12,7 +12,7 @@
 
         <article class="annonce__article">
             <h1><?= get_the_title(); ?></h1>
-        <?php the_content(); ?> 
+            <?php the_content(); ?> 
             <?php
             $endroit = get_field("endroit");
             $date = get_field("date");

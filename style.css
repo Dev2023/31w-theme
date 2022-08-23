@@ -681,7 +681,7 @@ textarea {
   border-radius: 7px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .blocs__horizontaux article {
     width: 22%;
   }
@@ -708,6 +708,10 @@ textarea {
   margin-block-start: -10px;
 }
 
+.conteneur-du-menu__accueil {
+  width: 100%;
+}
+
 /*Bloc menu de la page d'accueil*/
 /* .site__main {
     text-align: center;
@@ -721,23 +725,56 @@ textarea {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 700px) {
+  .menu-accueil-container {
+    width: 100%;
+  }
+}
+
 .menu-accueil-container .menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 700px) {
+  .menu-accueil-container .menu {
+    justify-content: flex-start;
+  }
+}
+
+.conteneur-du-menu__accueil nav {
+  width: 100%;
+}
+
 .menu-accueil-container .menu-item {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  border: 1px solid #fff9c0;
+  border: 1px solid #666;
   width: 30%;
   padding: 1.5rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .menu-accueil-container .menu-item {
+    border: none;
+    width: 100vw;
+    padding: 0;
+  }
+}
+
 .menu-accueil-container .menu-item a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .menu-item-description {
+    display: none;
+  }
+  #menu-accueil {
+    width: 100vw;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -777,7 +814,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 .site__sidebar {
   grid-area: sidebar;
-  background-color: #e4cbc8;
+  background-color: #d4aba5;
 }
 
 .site__footer {

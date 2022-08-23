@@ -19,7 +19,7 @@
             <?php endwhile; ?>
         <?php endif; ?> 
     </div> 
-    <div>
+    <div class="conteneur-du-menu__accueil">
         <?php wp_nav_menu(array(
                     'menu' => 'menu accueil',
                     'container' => 'nav',

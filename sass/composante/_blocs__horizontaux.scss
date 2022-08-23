@@ -17,7 +17,7 @@
     border: 1px solid $color__h;
     width: 45%;
     border-radius: $size__px-radius;
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1000px) {
         width: 22%;
     }
 }
@@ -37,4 +37,7 @@
 }
 .blocs__horizontaux article > p {
     margin-block-start: -10px;
+}
+.conteneur-du-menu__accueil {
+    width: 100%;
 }
