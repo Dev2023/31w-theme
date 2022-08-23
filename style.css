@@ -777,71 +777,14 @@ textarea {
   }
 }
 
-/*Bloc menu de la page d'accueil*/
-/* .site__main {
-    text-align: center;
-} */
-.site__main h1 {
-  color: #21759b;
-  text-align: center;
-}
-
-.menu-accueil-container {
-  margin-top: 10px;
-}
-
-@media screen and (max-width: 700px) {
-  .menu-accueil-container {
-    width: 100%;
-  }
-}
-
-.menu-accueil-container .menu {
+.menu-menu_ateliers-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fff;
 }
 
-@media screen and (max-width: 700px) {
-  .menu-accueil-container .menu {
-    justify-content: flex-start;
-  }
-}
-
-.conteneur-du-menu__accueil nav {
-  width: 100%;
-}
-
-.menu-accueil-container .menu-item {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #666;
-  width: 30%;
-  padding: 1.5rem;
-}
-
-@media screen and (max-width: 1000px) {
-  .menu-accueil-container .menu-item {
-    border: none;
-    width: 100vw;
-    padding: 0;
-  }
-}
-
-.menu-accueil-container .menu-item a {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 700px) {
-  .menu-item-description {
-    display: none;
-  }
-  #menu-accueil {
-    width: 100vw;
-  }
-}
-
+/* @import "composante/main_cours"; */
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -885,6 +828,15 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 .site__footer {
   grid-area: footer;
   background-color: #c38b83;
+}
+
+.site__footer > .width--alineation {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  background-color: #a7700a;
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 700px) {

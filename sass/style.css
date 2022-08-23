@@ -684,7 +684,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 .width--alineation { 
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px; /* background-color: rgb(167, 112, 112); */
+  max-width: 1500px; 
   display: flex;
   flex-direction: column;
 }
@@ -694,7 +694,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
   padding: .7rem 0;
   font-size: 16px; 
 }
-.footer--medias {  /*bgcbackground-color: rgb(181, 99, 99); */
+.footer--medias {  
   display: flex;
   flex-direction: row; 
   justify-content: space-evenly;
