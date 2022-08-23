@@ -777,11 +777,33 @@ textarea {
   }
 }
 
+/*menu ateliers*/
 .menu-menu_ateliers-container {
+  /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+  background-color: #fff;
+}
+
+.menu-menu_ateliers-container a {
+  text-decoration: none;
+  padding: 20px;
+  color: #191970;
+}
+
+.menu-menu_ateliers-container li {
+  list-style-type: none;
+  font-size: 14pt;
+}
+
+.menu-menu_ateliers-container ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #fff;
+}
+
+.produit__article h1 {
+  align-self: flex-start;
 }
 
 /* @import "composante/main_cours"; */
