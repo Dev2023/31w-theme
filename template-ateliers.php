@@ -21,7 +21,7 @@
             $heure = get_field("heure");
             $nombre_dheures_par_seance = get_field("nombre_dheures_par_seance");
             $niveau_de_dificultee = get_field("niveau_de_dificultee");
-            $heure = get_field("heure");
+            $lieu = get_field("lieu");
             $prix = get_field("prix");
             echo "<p class='atelier__animateur'>Animateur : " . $animateur . "</p>";
             echo "<p class='atelier__type_de_formation'>Type de formation : " . $type_de_formation . "</p>";
