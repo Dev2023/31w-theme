@@ -20,6 +20,7 @@
         <?php endif; ?> 
     </div> 
     <div class="conteneur-du-menu__accueil">
+    <h1>Évenements à venir</h1>
         <?php wp_nav_menu(array(
                     'menu' => 'menu accueil',
                     'container' => 'nav',
@@ -28,6 +29,7 @@
     </div>
 
     <div class="conteneur-du-menu__ateliers">
+    <h1>Ateliers offerts...</h1>
         <?php wp_nav_menu(array(
                     'menu' => 'menu_ateliers',
                     'container' => 'nav',

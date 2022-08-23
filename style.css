@@ -664,7 +664,6 @@ textarea {
 .blocs__horizontaux {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   position: relative;
 }
@@ -673,7 +672,6 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   height: 300px;
   margin-block-end: 150px;
   border: 1px solid #000;
@@ -718,7 +716,7 @@ textarea {
 } */
 .site__main h1 {
   color: #21759b;
-  text-align: center;
+  font-size: 36pt;
 }
 
 .menu-accueil-container {

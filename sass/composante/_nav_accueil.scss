@@ -4,7 +4,8 @@
 } */
 .site__main h1 {
     color: $color__text-screen;
-    text-align: center;
+    font-size: 36pt;
+    //text-align: center;
 }
 .menu-accueil-container {
     margin-top: 10px;
@@ -67,6 +68,8 @@
     list-style-type: none;
     font-size: 14pt;
     border-bottom: 1px solid $color__text-input;
+    //background-color: rgba(10, 10, 10, 0.36);
+    
 }
 .menu-menu_ateliers-container ul {
     display: flex;
