@@ -1,7 +1,77 @@
-.mon31w__adresse {
-  margin: 10px;
-  padding: 10px;
-  border-left: 5px solid #005;
-  background-color: #ccc;
+.carrousel {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #83acbf;
+  /*$color__text-screen*/
+  z-index: 9;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 1s, transform 1s;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 700px) {
+  .carrousel {
+    width: 70vw;
+    height: 70vh;
+    top: 50vh;
+    left: 15vw;
+  }
+}
+
+.carrousel__ouvrir {
+  opacity: 1;
+  transform: scale(1);
+  border-radius: 10px;
+}
+
+.carrousel__figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.carrousel__figure__img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+}
+
+.carrousel__figure__img--activer {
+  opacity: 1;
+}
+
+.carrousel__radio {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.carrousel__radio input {
+  margin: 10px;
+  display: block;
+}
+
+.carrousel__fermeture {
+  background-color: #b05f91;
+  margin-left: 45%;
+  margin-top: 10px;
+  color: #154646;
+  font-size: 20px;
+  /*  padding: 10px; */
+}
+
+.carrousel__fermeture:hover {
+  background-color: #7e365b;
+  color: aquamarine;
+}
