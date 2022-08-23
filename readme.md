@@ -6,4 +6,4 @@
 [Page d'accueil du 31w](https://eddym84.sg-host.com/) 
 
 
-[github-page](https://github.com/Dev2023/31w-theme/tp2)
+[github-page](https://Dev2023.github.com/31w-theme/)
