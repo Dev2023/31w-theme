@@ -1,5 +1,9 @@
 # TP2
 ## Thème 31w-cours et plugin  Wordpress
-## Exercice 4
-### Page 404, ajout d'articles ilustrés avec images et création de la categorie accueil.
+## TP2 et Examen Final
+### Contient Menu acceuil, template d'évenements, plugins, menu du site et examen final.
+### Lien du site : 
+[Page d'accueil du 31w](https://eddym84.sg-host.com/) 
 
+
+[github-page](https://github.com/Dev2023/31w-theme)
